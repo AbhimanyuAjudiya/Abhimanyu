@@ -8,15 +8,20 @@
   <title>Abhimanyu Ajudiya</title>
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="Icon" href="images/Icon.png">
+  <script
+      src="https://kit.fontawesome.com/617bd1f882.js"
+      crossorigin="anonymous"
+    ></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="top-continer">
+  <div class="top-continer animated-background">
     <img class="top-cloud" src="images/cloud.png" alt="cloud">
     <h1>
       I'm Abhimanyu
@@ -30,13 +35,13 @@
   <div class="middle-container">
     <div class="profile">
       <img class="my-img" src="images/Abhimanyu-img2.png" alt="My-Image">
-      <h2>Hello.</h2>
+      <h2>Hello World!</h2>
       <p>I am Abhimanyu Ajudiya. Learning Computer Science in GP Jamnagar. </p>
     </div>
   </div>
     <hr>
     <div class="skills">
-      <h2>My Skills.</h2>
+      <h2>My Skills</h2>
       <div class="skill-row">
         <img class="code-img" src="images/giphy.gif" alt="Skills">
         <h3>Web Development</h3>
@@ -51,17 +56,39 @@
       <hr>
       <div class="contact-me">
         <h2>Get In Touch</h2>
-        <h3>If you want any support.</h3>
-        <p>Here is my E-mail just mail me if want.</p>
         <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
       </div>
     </div>
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/abhimanyu-ajudiya-02860a201/">LinkedIn</a>  &nbsp;
-    <a class="footer-link" href="https://twitter.com/Abhimanyu_2005"> Twitter</a>  &nbsp;
-    <a class="footer-link" href="https://github.com/AbhimanyuAjudiya"> Github</a>
-    <p class="last-line">©2022 Abhimanyu Ajudiya.</p>
+
+    <div class="icons bottom-container">
+      <a href="https://www.instagram.com/abhimanyu_ajudiya/" class="icon icon--instagram" target="_blank">
+        <i class="ri-instagram-line"></i>
+      </a>
+      <a href="https://twitter.com/Abhimanyu_2005" class="icon icon--twitter" target="_blank">
+        <i class="ri-twitter-line"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/abhimanyu-ajudiya-02860a201/" class="icon icon--linkedin" target="_blank">
+        <i class="ri-linkedin-line"></i>
+      </a>
+      <a href="https://github.com/AbhimanyuAjudiya" class="icon icon--github" target="_blank">
+        <i class="ri-github-line"></i>
+      </a>
+      <br>
+      <br>
+      <p class="last-line">©2022 Abhimanyu Ajudiya.</p>
+    </div>
+
+  <div class="tracker">
+    <img class="tracker-img" src="./images/Duck.webp" alt="">
   </div>
+
+  <script>
+    const tracker = document.querySelector(".tracker");
+    document.body.addEventListener("mousemove", e => {
+      tracker.style.left = `${e.clientX}px`;
+      tracker.style.top = `${e.clientY}px`;
+    });
+  </script>
 
 </body>
 
