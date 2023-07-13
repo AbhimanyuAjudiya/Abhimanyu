@@ -1,3 +1,37 @@
+@media (max-width: 768px) {
+  .container {
+    width: 480px;
+    padding: 0 20px;
+  }
+  .top-cloud {
+    position: absolute;
+    right: 100px;
+    top: 15px;
+  }
+  .bottom-cloud {
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+  }
+  .top-cloud, .bottom-cloud {
+    position: absolute;
+    animation: move-clouds 10s linear infinite;
+  }
+  h1 {
+    font-size: 4.625rem;
+    margin: 5px auto 0 auto;
+    color: #66bfbf;
+    font-family: "Sacramento", cursive;
+  }
+  h2 {
+    color: #66bfbf;
+    margin: 2px auto 0 auto;
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
 body {
   background-color: #395B64;  
   text-align: center;
@@ -72,6 +106,12 @@ p{
   animation: move-clouds 10s linear infinite;
 }
 
+.mountain{
+  position: relative;
+  height: auto;
+  max-width: 100%;
+}
+
 @keyframes move-clouds {
   0% {
     transform: translateX(-100%);
@@ -96,8 +136,9 @@ p{
 }
 .my-img
 {
-    height: 250px;
-    width: 250px;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
 }
 .contact-me{
     margin: 100px auto 100px auto;
