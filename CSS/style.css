@@ -9,7 +9,7 @@
     top: 15px;
   }
   .bottom-cloud {
-    display: none;
+    /* display: none; */
   }
   .top-cloud, .bottom-cloud {
     position: absolute;
@@ -111,6 +111,7 @@ p{
 .mountain{
   position: relative;
   height: auto;
+  margin-top: 15rem;
   max-width: 100%;
 }
 
